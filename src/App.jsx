@@ -2132,13 +2132,13 @@ function PageNotFound() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <>
     <ScrollToTop />   {/* 👈 THIS LINE */}
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<PageHome />} />
           <Route path="services"   element={<PageServices />} />
-          <Route path="join" element={<PageJoinUMC />} />
+          <Route path="Choose-Your-Path" element={<PageJoinUMC />} />
           <Route path="/our-mission" element={<PageOurMission />} />
           <Route path="operations" element={<PageOperations />} />
           <Route path="providing-security" element={<PageProvidingSecurity />} />
@@ -2147,13 +2147,13 @@ export default function App() {
           <Route path="/ground-wing" element={<PageGroundWing />} />
           <Route path="/stratos-wing" element={<PageStratosWing />} />
           <Route path="lsco"       element={<PageLSCO />} />
-          <Route path="Enlist Today"  element={<PageEnlistToday />} />
-          <Route path="history"    element={<PageUMCGallery />} />
+          <Route path="Enlist-Today"  element={<PageEnlistToday />} />
+          <Route path="UMC-Gallery"    element={<PageUMCGallery />} />
           <Route path="recruitment" element={<PageStub title="CHOOSE YOUR PATH" />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </>
 
   );
 }
