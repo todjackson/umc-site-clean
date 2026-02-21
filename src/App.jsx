@@ -181,7 +181,7 @@ function Layout() {
           <ul className="flex flex-nowrap items-center gap-2 md:gap-3 lg:gap-4">
   <li><TabLink to="/our-mission" label="OUR MISSION" /></li>
           
-  <li><TabLink to="/join" label="CHOOSE YOUR PATH" /></li>
+  <li><TabLink to="/choose-your-path" label="CHOOSE YOUR PATH" /></li>
 
   {/* New tabs */}
   
@@ -1794,8 +1794,8 @@ function PageUMCGallery() {
   const items = useMemo(
     () => [
       {
-        src: encodeURI("/gallery/Alighn and Mine - 04-09-25 - LSCO.webp"),
-        title: "Alighn and Mine",
+        src: encodeURI("/gallery/Align and Mine - 04-09-25 - LSCO.webp"),
+        title: "Align and Mine",
         tag: "LSCO",
         date: "2025-09-04",
       },
@@ -1806,8 +1806,8 @@ function PageUMCGallery() {
         date: "2025-08-31",
       },
       {
-        src: encodeURI("/gallery/Breifing room - 21-08-25 - Stratos wing.webp"),
-        title: "Breifing room",
+        src: encodeURI("/gallery/Briefing room - 21-08-25 - Stratos wing.webp"),
+        title: "Briefing room",
         tag: "Stratos",
         date: "2025-08-21",
       },
@@ -2147,7 +2147,8 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<PageHome />} />
           <Route path="services"   element={<PageServices />} />
-          <Route path="join" element={<PageJoinUMC />} />
+          <Route path="choose-your-path" element={<PageJoinUMC />} />
+          <Route path="join" element={<Navigate to="/choose-your-path" replace />} />
           <Route path="/our-mission" element={<PageOurMission />} />
           <Route path="operations" element={<PageOperations />} />
           <Route path="providing-security" element={<PageProvidingSecurity />} />
