@@ -1785,8 +1785,8 @@ function PageUMCGallery() {
   const items = useMemo(
     () => [
       {
-        src: encodeURI("/gallery/Align and Mine - 04-09-25 - LSCO.webp"),
-        title: "Align and Mine",
+        src: encodeURI("/gallery/Alighn and Mine - 04-09-25 - LSCO.webp"),
+        title: "Alighn and Mine",
         tag: "LSCO",
         date: "2025-09-04",
       },
@@ -1797,7 +1797,7 @@ function PageUMCGallery() {
         date: "2025-08-31",
       },
       {
-        src: encodeURI("/gallery/Briefing room - 21-08-25 - Stratos wing.webp"),
+        src: encodeURI("/gallery/Breifing room - 21-08-25 - Stratos wing.webp"),
         title: "Breifing room",
         tag: "Stratos",
         date: "2025-08-21",
@@ -2138,7 +2138,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<PageHome />} />
           <Route path="services"   element={<PageServices />} />
-          <Route path="Choose-Your-Path" element={<PageJoinUMC />} />
+          <Route path="join" element={<PageJoinUMC />} />
           <Route path="/our-mission" element={<PageOurMission />} />
           <Route path="operations" element={<PageOperations />} />
           <Route path="providing-security" element={<PageProvidingSecurity />} />
@@ -2148,7 +2148,8 @@ export default function App() {
           <Route path="/stratos-wing" element={<PageStratosWing />} />
           <Route path="lsco"       element={<PageLSCO />} />
           <Route path="Enlist-Today"  element={<PageEnlistToday />} />
-          <Route path="UMC-Gallery"    element={<PageUMCGallery />} />
+          <Route path="umc-gallery" element={<PageUMCGallery />} />
+   
           <Route path="recruitment" element={<PageStub title="CHOOSE YOUR PATH" />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
