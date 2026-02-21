@@ -88,6 +88,15 @@ function TabLink({ to, label, end }) {
 
 
 function Layout() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Fix old legacy URL with spaces
+    if (location.pathname.toLowerCase() === "/enlist today") {
+      navigate("/enlist-today", { replace: true });
+    }
+  }, [location.pathname, navigate]);
   return (
     /* PAGE BACKGROUND (space image on left/right) */
     <div
@@ -177,8 +186,8 @@ function Layout() {
   {/* New tabs */}
   
 
-  <li><TabLink to="/Enlist Today" label="Enlist Today" /></li>
-  <li><TabLink to="/history" label="UMC GALLERY" /></li>
+  <li><TabLink to="/enlist-today" label="Enlist Today" /></li>
+  <li><TabLink to="/umc-gallery" label="UMC GALLERY" /></li>
 </ul>
 
         </nav>
@@ -2098,7 +2107,7 @@ function PageUMCGallery() {
 }
 
 
-function PageHistory()   { return <PageStub title="History of UMC" />; }
+
 /* ====== Placeholder pages for your nav ====== */
 function PageServices()  { return <PageStub title="Services" />; }
 
@@ -2148,8 +2157,8 @@ export default function App() {
           <Route path="/stratos-wing" element={<PageStratosWing />} />
           <Route path="lsco"       element={<PageLSCO />} />
           <Route path="enlist-Today"  element={<PageEnlistToday />} />
-          <Route path="history"    element={<PageUMCGallery />} />
-          <Route path="history" element={<Navigate to="/umc-gallery" replace />} />
+          <Route path="Enlist Today" element={<Navigate to="/enlist-today" replace />} />
+          <Route path="umc-gallery"    element={<PageUMCGallery />} />
           <Route path="recruitment" element={<PageStub title="CHOOSE YOUR PATH" />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
