@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { HashRouter, Routes, Route, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Routes, Route, NavLink, Outlet, useLocation, useNavigate, Navigate } from "react-router-dom";
 
 
 
