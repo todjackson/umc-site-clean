@@ -1785,8 +1785,8 @@ function PageUMCGallery() {
   const items = useMemo(
     () => [
       {
-        src: encodeURI("/gallery/Alighn and Mine - 04-09-25 - LSCO.webp"),
-        title: "Alighn and Mine",
+        src: encodeURI("/gallery/Align and Mine - 04-09-25 - LSCO.webp"),
+        title: "Align and Mine",
         tag: "LSCO",
         date: "2025-09-04",
       },
@@ -1797,7 +1797,7 @@ function PageUMCGallery() {
         date: "2025-08-31",
       },
       {
-        src: encodeURI("/gallery/Breifing room - 21-08-25 - Stratos wing.webp"),
+        src: encodeURI("/gallery/Briefing room - 21-08-25 - Stratos wing.webp"),
         title: "Breifing room",
         tag: "Stratos",
         date: "2025-08-21",
