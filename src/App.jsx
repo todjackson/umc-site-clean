@@ -2147,9 +2147,9 @@ export default function App() {
           <Route path="/ground-wing" element={<PageGroundWing />} />
           <Route path="/stratos-wing" element={<PageStratosWing />} />
           <Route path="lsco"       element={<PageLSCO />} />
-          <Route path="Enlist-Today"  element={<PageEnlistToday />} />
-          <Route path="umc-gallery" element={<PageUMCGallery />} />
-   
+          <Route path="enlist-Today"  element={<PageEnlistToday />} />
+          <Route path="history"    element={<PageUMCGallery />} />
+          <Route path="history" element={<Navigate to="/umc-gallery" replace />} />
           <Route path="recruitment" element={<PageStub title="CHOOSE YOUR PATH" />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
