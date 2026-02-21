@@ -1813,7 +1813,7 @@ function PageUMCGallery() {
       },
       {
         src: encodeURI("/gallery/Cracking the Quant - 01-10-25 - LSCO.png"),
-        title: "Cracking the Quart",
+        title: "Cracking the Quant",
         tag: "LSCO",
         date: "2025-10-01",
       },
